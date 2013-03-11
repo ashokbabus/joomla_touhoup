@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="general">
+		<field
+			name="title"
+			type="plugintitle"
+			size="20"
+			label="Description"
+			description="The plugin's title" />
+		<field
+			name="published"
+			type="list"
+			label="JSTATUS"
+			description="JFIELD_PUBLISHED_DESC"
+			class="inputbox"
+			size="1"
+			default="1">
+			<option	value="1">JENABLED</option>
+			<option	value="0">JDISABLED</option>
+		</field>
+		<field
+			name="type"
+			type="text"
+			size="20"
+			label="Plugin Type"
+			description="The Type of the Plugin"
+			readonly="true"
+			class="readonly" />
+		<field
+			name="name"
+			type="text"
+			size="20"
+			label="Plugin Name"
+			description="The Name of the Plugin"
+			readonly="true"
+			class="readonly" />
+		<field
+			name="icon"
+			type="text"
+			size="20"
+			label="Plugin Icon"
+			description="The plugin's toolbar icon" />
+		<field
+			name="id"
+			label="JGLOBAL_FIELD_ID_LABEL"
+			description ="JGLOBAL_FIELD_ID_DESC"
+			type="text"
+			default="0"
+			readonly="true"
+			class="readonly" />
+	</fieldset>
+	<fieldset name="toolbars">
+		<field name="toolbars" 
+			type="radio"
+			class="btn-group"
+			default="all"
+			description="Select Toolbar"
+			label="Toolbars(s)">
+			<option value="all" onclick="allselections();">JALL</option>
+			<option value="none" onclick="disableselections();">JNONE</option>
+			<option value="select" onclick="enableselections();">Select From List</option>
+		</field>
+		<field name="selections" 
+			type="ToolbarList"
+			default="all"
+			size="6"
+			multiple="multiple"
+			description="Select a toolbar to add the plugin to"
+			label="Toolbar Selection">
+		</field>
+	</fieldset>
+	<fieldset name="usergroup">
+		<field name="group" 
+			type="radio"
+			class="btn-group"
+			default="all"
+			description="Select User Groups"
+			label="User Group(s)">
+			<option value="all" onclick="allgroups();">JALL</option>
+			<option value="special" onclick="disablegroups();">Special</option>
+			<option value="select" onclick="enablegroups();">Select From List</option>
+		</field>
+		<field name="groups" 
+			type="GroupsList"
+			default="all"
+			size="10"
+			multiple="multiple"
+			description="Select a user group to add the plugin to"
+			label="User Group Selection">
+		</field>
+	</fieldset>
+</form>

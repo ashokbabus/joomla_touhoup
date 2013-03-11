@@ -1,0 +1,8 @@
+/*------------------------------------------------------------------------
+# Copyright (C) 2005-2012 WebxSolution Ltd. All Rights Reserved.
+# @license - GPLv2.0
+# Author: WebxSolution Ltd
+# Websites:  http://www.webxsolution.com
+# Terms of Use: An extension that is derived from the JoomlaCK editor will only be allowed under the following conditions: http://joomlackeditor.com/terms-of-use
+# ------------------------------------------------------------------------*/ 
+CKEDITOR.plugins.add("codemirrorresize",{init:function(a){},afterInit:function(a){function c(b){if(a.mode!="wysiwyg"&&a.plugins.codemirror){var c=a.textarea.getNext();if(CKEDITOR.env.ie)a.textarea.hide();c.hide()}}function d(b){if(a.mode!="wysiwyg"&&a.plugins.codemirror){var e=a.textarea.getNext();e.show();CKEDITOR.document.removeListener("mousemove",c);CKEDITOR.document.removeListener("mouseup",d)}}var b=false;a.on("mode",function(a){var b=a.editor;if(b.plugins.resize){var e=b.getThemeSpace("bottom").getLast();e.on("mousedown",function(){if(b.mode!="wysiwyg"&&b.plugins.codemirror){CKEDITOR.document.on("mousemove",c);CKEDITOR.document.on("mouseup",d)}})}});a.on("resize",function(a){var b=a.editor;if(b.mode!="wysiwyg"&&b.plugins.codemirror){var c=b.getResizable();var d=c.getStyle("width");var e=b.textarea.getNext();var f=CKEDITOR.document.getById("cke_contents_"+b.name);var g=f.getStyle("height");e.setStyle("height",g);e.setStyle("width",d)}})}})

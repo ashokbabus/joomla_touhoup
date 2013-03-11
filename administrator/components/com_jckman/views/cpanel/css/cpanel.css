@@ -1,0 +1,92 @@
+/*------------------------------------------------------------------------
+# Copyright (C) 2005-2012 WebxSolution Ltd. All Rights Reserved.
+# @license - GPLv2.0
+# Author: WebxSolution Ltd
+# Websites:  http://www.webxsolution.com
+# Terms of Use: An extension that is derived from the JoomlaCK editor will only be allowed under the following conditions: http://joomlackeditor.com/terms-of-use
+# ------------------------------------------------------------------------*/ 
+
+div#submenu-box { display: none;}
+#sbox-btn-close { display:none;}
+#sbox-window{ background-color : #000000;}
+
+/* STYLE SLIDERS */
+#JCKSliders .accordion-group,
+#JCKSliders .accordion-inner
+{
+	border					: 0px none;
+}
+
+/* FIX JOOMLA OUTLINE ISSUE */
+#JCKSliders a
+{
+	outline					: 0px none;
+}
+
+#JCKSliders .accordion-toggle
+{
+	padding					: 0px;
+}
+
+#JCKSliders .accordion-toggle span
+{
+	color					: #333333;
+	font-size				: 80%;
+}
+
+/* STYLE CPANEL */
+.well > div
+{
+	overflow				: hidden;
+}
+
+.well .table
+{
+	word-wrap				: break-word;
+}
+
+#sidebar
+{
+	padding-bottom			: 15px; /* for mobiles benefit */
+}
+
+#jckcpanel
+{
+	min-height				: 150px;
+	padding-top				: 12px;
+	overflow				: hidden;
+	clear					: both;
+}
+
+#jckcpanel a
+{
+	display					: block;
+	float					: left;
+	width					: 80px;
+	height					: 100px;
+	padding					: 15px 4%;
+
+	text-align				:center;
+}
+
+#jckcpanel a img
+{
+	padding-top				: 0px;
+
+	transition				: padding-top 0.1s;
+	-moz-transition			: padding-top 0.1s;
+	-webkit-transition		: padding-top 0.1s;
+	-o-transition			: padding-top 0.1s;
+	-ms-transition			: padding-top 0.1s;
+}
+
+#jckcpanel a:hover img
+{
+	padding-top				: 4px;
+
+	transition				: padding-top 0.2s;
+	-moz-transition			: padding-top 0.2s;
+	-webkit-transition		: padding-top 0.2s;
+	-o-transition			: padding-top 0.2s;
+	-ms-transition			: padding-top 0.2s;
+}

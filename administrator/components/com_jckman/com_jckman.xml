@@ -1,0 +1,69 @@
+<extension type="component" version="3.0" method="upgrade">
+    <name>com_jckman</name>
+    <version>5.0.6</version>
+	<creationDate>December 2012</creationDate>
+    <description><![CDATA[ 
+	<p>JoomlaCK Editor Manager v5.0.6</p> 
+	]]></description>
+    <license>GNU/GPLv2</license>
+    <author>Andrew Williams</author>
+    <authoremail>andrew@joomlackeditor.com</authoremail>
+    <authorurl>http://www.joomlackeditor.com</authorurl>
+    <copyright>2012 - 2013 WebxSolutions Ltd</copyright>
+	<scriptfile>install.php</scriptfile>
+    <install>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.sql</file>
+        </sql>
+    </install>
+    <uninstall>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.sql</file>
+        </sql>
+    </uninstall>
+   <administration>
+		<languages>
+			<language tag="en-GB">language/en-GB/en-GB.com_jckman.sys.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_jckman.ini</language>
+		</languages>    
+		<menu img="components/com_jckman/icons/jcklogo.png">COM_JCKMAN_MENU_NAME</menu>
+		<submenu>
+			<menu img="components/com_jckman/icons/icon-16-cpanel.png" link="option=com_jckman&amp;view=cpanel">COM_JCKMAN_SUBMENU_CPANEL_NAME</menu>
+			<menu img="components/com_jckman/icons/icon-16-pluginmanager.png" link="option=com_jckman&amp;view=list">COM_JCKMAN_SUBMENU_PLUGIN_NAME</menu>
+			<menu img="components/com_jckman/icons/icon-16-installer.png" link="option=com_jckman&amp;view=install">COM_JCKMAN_SUBMENU_INSTALL_NAME</menu>
+			<menu img="components/com_jckman/icons/icon-16-uninstaller.png" link="option=com_jckman&amp;view=plugin">COM_JCKMAN_SUBMENU_UNINSTALL_NAME</menu>
+			<menu img="components/com_jckman/icons/icon-16-systemcheck.png" link="option=com_jckman&amp;view=cpanel&amp;taskbtn=system">COM_JCKMAN_SUBMENU_SYSTEMCHECK_NAME</menu>
+			<menu img="components/com_jckman/icons/icon-16-sync.png" link="option=com_jckman&amp;view=cpanel&amp;taskbtn=sync">COM_JCKMAN_SUBMENU_SYNC_NAME</menu>
+			<menu img="components/com_jckman/icons/icon-16-editor.png" link="option=com_jckman&amp;view=cpanel&amp;taskbtn=editor">COM_JCKMAN_SUBMENU_JCKEDITOR_NAME</menu>
+		</submenu>
+		<files folder="admin">
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>jckman.php</filename>
+			<filename>helper.php</filename>
+			<filename>access.xml</filename>
+			<filename>index.html</filename>
+			<folder>adapters</folder>
+			<folder>base</folder>
+			<folder>config</folder>
+			<folder>controllers</folder>
+			<folder>css</folder>
+			<folder>editor</folder>
+			<folder>event</folder>
+			<folder>help</folder>
+			<folder>helpers</folder>
+			<folder>html</folder>
+			<folder>icons</folder>
+			<folder>js</folder>
+			<folder>tables</folder>
+			<folder>models</folder>
+			<folder>views</folder>
+			<folder>modules</folder>
+			<folder>restorers</folder>
+			<folder>sql</folder>
+		</files>
+  </administration>
+	<updateservers>
+		<server type="extension" priority="1" name="JoomlaCK Editor Update Site">http://www.joomlackeditor.com/upgrade/com_jckman.xml</server>
+	</updateservers>
+</extension>

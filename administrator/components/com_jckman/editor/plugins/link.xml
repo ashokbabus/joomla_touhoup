@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<install version="1.5" type="plugin" plugin="link" method="upgrade">
+	<version>0.1</version>
+	<creationDate>Feb 2012</creationDate>
+	<author>CKSource.com</author>
+	<authorUrl>http://cksource.com/</authorUrl>
+	<license>GNU/GPLv2</license>
+	<description>Core Link plugin</description>
+	<languages>
+	</languages>
+	<params>
+		<param name="dialogtitle_switcher" type="jsradio" default="0" label="Dialog Title" description="The Title shown in the dialog for this plugin">
+			<option value="0">Default</option>
+			<option value="1">Enter new title</option>
+		</param>	
+		<param name="dialogtitle" type="text" default="Default" label="Dialog Title" description="Enter the title to show in the dialog for this plugin" />
+		<param name="height" type="text" default="230" label="Dialog height" description="The height of dialog" />
+		<param name="width" type="text" default="350" label="Dialog width" description="The width of dialog"/>
+	</params>
+	<params group="options">
+		<param name="emailProtection" type="radio" default="0" label="Enable Email Cloaking" description="
+The e-mail address anti-spam protection option. The protection will be applied when creating or modifying e-mail links through the editor interface. When enabled the e-mail address is obfuscated into a special string that has no meaning for humans or spam bots, but which is properly rendered and accepted by the browser.">
+			<option value="">No</option>
+			<option value="encode">Yes</option>
+			<param name="filebrowser" type="filebrowsers"  label="Choose A Filebrowser" description = ""/>
+		</param>
+	</params>
+</install>

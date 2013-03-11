@@ -1,0 +1,219 @@
+/*------------------------------------------------------------------------
+# Copyright (C) 2005-2012 WebxSolution Ltd. All Rights Reserved.
+# @license - GPLv2.0
+# Author: WebxSolution Ltd
+# Websites:  http://www.webxsolution.com
+# Terms of Use: An extension that is derived from the JoomlaCK editor will only be allowed under the following conditions: http://joomlackeditor.com/terms-of-use
+# ------------------------------------------------------------------------*/ 
+/*===============> */
+/*==========> J3.0 */
+/*===============> */
+/* TOOLBAR BUTTONS */
+.icon-cpanel:before
+{
+	content					: "7";
+	color					: #333333;
+}
+
+.icon-export:before
+{
+	content					: "R";
+	color					: #51A351;
+}
+
+/* SUBMENU BUTTONS */
+#sidebar #submenu a[href*='com_jckman&view=cpanel']:before
+{
+	font-family				: 'IcoMoon';
+	content					: "7 ";
+}
+
+#sidebar #submenu a[href*='com_jckman&view=list']:before
+{
+	font-family				: 'IcoMoon';
+	content					: "4 ";
+}
+
+#sidebar #submenu a[href*='com_jckman&view=install']:before
+{
+	font-family				: 'IcoMoon';
+	content					: "3 ";
+}
+
+#sidebar #submenu a[href*='com_jckman&view=plugin']:before
+{
+	font-family				: 'IcoMoon';
+	content					: "L ";
+}
+
+#sidebar #submenu a[href*='com_jckman&view=cpanel&taskbtn=system']:before
+{
+	font-family				: 'IcoMoon';
+	content					: "j ";
+}
+
+#sidebar #submenu a[href*='com_jckman&view=toolbars']:before
+{
+	font-family				: 'IcoMoon';
+	content					: "1 ";
+}
+
+#sidebar #submenu a[href*='com_jckman&view=import']:before
+{
+	font-family				: 'IcoMoon';
+	content					: "l ";
+}
+
+#sidebar #submenu a[href*='com_jckman&view=cpanel&taskbtn=export']:before
+{
+	font-family				: 'IcoMoon';
+	content					: "R ";
+}
+
+#sidebar #submenu a[href*='com_jckman&view=cpanel&taskbtn=sync']:before
+{
+	font-family				: 'IcoMoon';
+	content					: "f ";
+}
+
+#sidebar #submenu a[href*='com_jckman&view=cpanel&taskbtn=editor']:before
+{
+	font-family				: 'IcoMoon';
+	content					: "2 ";
+}
+
+#sidebar #submenu a[href*='com_installer']
+{
+	display					: none;
+}
+
+/* J3.0 STYLE FIXES */
+.nav-tabs a:focus
+{
+	outline					: 0px none;
+}
+
+.sidebar-nav .nav-list a.nolink,
+.sidebar-nav .nav-list a.nolink:hover,
+.sidebar-nav .nav-list li.active a.nolink,
+.sidebar-nav .nav-list li.active a.nolink:hover
+{
+	color					: #888888;
+	background-color		: transparent;
+	text-shadow				: none;
+}
+
+/* MOBILE STYLE FIXES */
+#filter-bar .btn-group > .btn
+{
+	max-width				: 50%;
+}
+
+.jckbreak
+{
+	word-break				: break-word;
+}
+
+/* ACCESSIBILITY TMPL FIXES */
+/* installer */
+body#minwidth-body .nav-tabs > li
+{
+	float					: left;
+	list-style				: none outside none;
+}
+
+body#minwidth-body #main-container > div
+{
+	padding					: 20px;
+	clear					: both;
+}
+
+body#minwidth-body #jform_selections_chzn
+{
+	min-width				: 200px;
+}
+
+/* installer tabs fix */
+body#minwidth-body #main-container .nav li
+{
+	margin					: 3px 5px;
+	padding					: 5px;
+
+	border					: 1px solid #C7C8B2;
+	background-color		: #F9FADE;
+}
+
+/* root tabs fix */
+body#minwidth-body #submenu
+{
+	padding-bottom			: 31px;
+}
+
+body#minwidth-body #submenu li
+{
+	margin-top				: 5px;
+}
+
+body#minwidth-body .jckman_install #submenu li:nth-child(1),
+body#minwidth-body .jckman_install #submenu li:nth-child(2),
+body#minwidth-body .jckman_install #submenu li:nth-child(3),
+body#minwidth-body .jckman_install #submenu li:nth-child(4),
+body#minwidth-body .jckman_install #submenu li:nth-child(5),
+body#minwidth-body .jckman_install #submenu li:nth-child(6),
+body#minwidth-body .jckman_install #submenu li:nth-child(7)
+{
+	display					: none;
+}
+
+/*==========> END J3.0! */
+
+.icon-48-cpanel {
+ background-image:url("../icons/icon-48-cpanel.png") !important;
+}
+.icon-32-cpanel {
+ background-image:url("../icons/icon-32-cpanel.png") !important;
+}
+.pane-sliders .content {
+ background:none repeat scroll 0 0 #FFFFFF !important;
+}
+.icon-48-plugin {
+background-image:url("../icons/icon-48-plugin.png") !important;
+}
+.icon-48-layout {
+background-image:url("../icons/icon-48-layout.png") !important;
+}
+.icon-48-installer {
+background-image:url("../icons/icon-48-installer.png") !important;
+}
+.icon-48-import {
+background-image:url("../icons/icon-48-import.png") !important;
+}
+.message small
+{
+ font-size:inherit !important;
+}
+
+/*J!1.6 StyleFixes - PF*/
+fieldset.adminform input, fieldset.adminform textarea, fieldset.adminform select, fieldset.adminform img, fieldset.adminform button {
+	float: none !important;
+}
+fieldset.adminform label, fieldset.adminform span.faux-label {
+	float: none !important; display: inline !important;
+}
+div.width-60 {
+    float: left;
+}
+div.width-40 {
+    float: right;
+}
+div#element-box div.m {
+    padding: 0 10px !important;
+}
+table.adminform td {
+	padding: 15px !important; font-size: 11px !important;
+}
+#content-pane {margin: 0 !important;
+}
+input.button {
+    margin-top: 2px;
+}

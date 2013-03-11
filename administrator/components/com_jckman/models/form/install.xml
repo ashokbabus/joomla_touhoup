@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="toolbars">
+		<field name="toolbars" 
+			type="radio"
+			class="btn-group"
+			default="all"
+			description="Select Toolbar"
+			label="Toolbars(s)">
+			<option value="all" onclick="allselections();">JALL</option>
+			<option value="none" onclick="disableselections();">JNONE</option>
+			<option value="select" onclick="enableselections();">Select From List</option>
+		</field>
+		<field name="selections" 
+			type="ToolbarList"
+			default="all"
+			size="6"
+			multiple="multiple"
+			description="Select a toolbar to add the plugin to"
+			label="Toolbar Selection">
+		</field>
+	</fieldset>
+</form>

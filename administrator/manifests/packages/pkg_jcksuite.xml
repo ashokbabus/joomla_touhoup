@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3.0" method="upgrade">
+	<name>JCK Suite</name>
+	<author>Andrew Williams</author>
+	<creationDate>March 2013</creationDate>
+ 	<packagename>jcksuite</packagename>
+	 <version>6.2</version>
+	 <url>http://www.webxsolution.com</url>
+	 <packager>Webxsolution</packager>
+	 <packagerurl>http://www.webxsolution.com</packagerurl>
+	 <description>Welcome to the next-generation of internet based editors. The JCK Editor's performance is truly amazing, thanks to its plug-n-play state-of-the-art API engine and is much more than an Out-of-the-Box installation of the CKEditor. Weve been under the hood and Joomla-ised its logic into a seamless and extendable integration.  Users can now customise the editor from the largest growing extension base of all Joomla editors, choose what tool-bars, setup user permissions, create and edit the editors own typography style-sheet and configure the editor for real-time editing! And whats more - when you have created your bespoke configuration you can now export your setting via the all new JCK Manager component!</description>
+	 <license>GNU/GPLv2</license>
+	 <files folder="packages">
+		 <file type="plugin" id="jckeditor" group="editors">plg_jckeditor.zip</file>
+		 <file type="plugin" id="jckmodal" group="system">plg_jckmodal1.1.zip</file>
+		 <file type="component" id="com_jckman">com_jckman.zip</file>
+	 </files>
+	 <scriptfile>install.php</scriptfile>
+</extension>

@@ -1,0 +1,27 @@
+/*------------------------------------------------------------------------
+# Copyright (C) 2005-2012 WebxSolution Ltd. All Rights Reserved.
+# @license - GPLv2.0
+# Author: WebxSolution Ltd
+# Websites:  http://www.webxsolution.com
+# Terms of Use: An extension that is derived from the JoomlaCK editor will only be allowed under the following conditions: http://joomlackeditor.com/terms-of-use
+# ------------------------------------------------------------------------*/ 
+html,body {
+overflow:hidden;
+}
+
+
+table {
+margin:14px;
+width:513px;
+}
+input[type="text"],select{
+	margin-right:28px;
+}
+
+select.combobox {
+margin:0px;
+}
+
+td.last{
+	width:250px !important;
+}

@@ -1,0 +1,18 @@
+.t3-footer {
+  background: #690;
+  color: #fff;
+}
+.t3-footer a {
+  color: #ddff99;
+}
+.t3-footer a:hover,
+.t3-footer a:active,
+.t3-footer a:focus {
+  color: #fff;
+}
+.t3-footnav .module-title {
+  color: #fff;
+}
+.t3-copyright {
+  border-top: 1px solid #77b300;
+}

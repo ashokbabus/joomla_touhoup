@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="system" method="upgrade">
+	<name>System - JCK Modal</name>
+	<author>WebxSolution Ltd</author>
+	<creationDate>April 2011</creationDate>
+	<copyright>Copyright 2011 WebxSolution Ltd. All rights reserved.</copyright>
+	<license>GPL</license>
+	<authorEmail>studio@webxsolution.com</authorEmail>
+	<authorUrl>www.webxsolution.com</authorUrl>
+	<version>1.1</version>
+	<description>Forces Joomla to initialise the Modal JS classes required by JTree Link's modal option.</description>
+	<files>
+		<filename plugin="jckmodal">jckmodal.php</filename>
+		<filename plugin="jckmodal">index.html</filename>
+	</files>
+	<params/>
+</extension>

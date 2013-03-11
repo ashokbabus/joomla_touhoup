@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<install version="1.5" type="plugin" plugin="wysiwygarea" method="upgrade">
+	<version>0.1</version>
+	<creationDate>Feb 2012</creationDate>
+	<author>CKSource.com</author>
+	<authorUrl>http://cksource.com/</authorUrl>
+	<license>GNU/GPLv2</license>
+	<description>Core Wysiwygarea plugin</description>
+	<languages>
+	</languages>
+<params group="options">
+		<param name="autoGrow_maxHeight" type="list" default="500" label="AutoGrow Max Height" description=" The maximum editor height, in pixels, the editor can reach using the AutoGrow feature  ">
+			<option value="500">500</option>
+			<option value="1000">1000</option>
+			<option value="1500">1500</option>
+			<option value="2000">2000</option>
+			<option value="2500">2500</option>
+			<option value="3000">3000</option>
+			<option value="0">Unlimted</option>
+		</param>
+		<param name="autoGrow_minHeight" type="list" default="250" label="AutoGrow Min Height" description=" The minumum editor height, in pixels, the editor can reach using the AutoGrow feature ">
+			<option value="250">250</option>
+			<option value="300">300</option>
+			<option value="350">350</option>
+			<option value="400">400</option>
+			<option value="450">450</option>
+			<option value="500">500</option>
+		</param>
+		<param name="autoGrow_onStartup" type="radio" default="0" label="Enable Auto Grow on Startup " description="Sets whether  to have the auto grow happen on editor creation.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+</params>
+</install>

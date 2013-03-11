@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<install version="2.5" type="plugin" plugin="webkitdrag" method="upgrade">
+	<version>1.0</version>
+	<creationDate>Feb 2013</creationDate>
+	<author>Andrew Williams</author>
+	<copyright>Copyright (C) 2013 - 2014 Webxsolution</copyright>
+	<authorUrl>http://www.webxsolution.com</authorUrl>
+	<license>GNU/GPLv2</license>
+	<description>Plugin adds image resize handles for webkit for the JCK Editor</description>
+	<languages>
+	</languages>
+	<files>
+		<filename>plugin.js</filename>
+    </files>
+	
+
+</install>
